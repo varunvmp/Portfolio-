@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: sans-serif;
+        }
+        html,body{
+        width:100%;
+        height:100%;
+        
+        }
+
+        nav {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 0 10px black;
+
+
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-right: 150px;
+        }
+
+        nav ul a {
+            color: black;
+
+        }
+
+        nav div {
+            margin-left: 150px;
+            text-transform: uppercase;
+        }
+
+        .maincon {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+        .maincon img {
+            margin-top: 100px;
+            height: 400px;
+
+
+        }
+
+        .maincon h2 {
+            text-transform: uppercase;
+
+
+        }
+
+        .maincon span {
+            color: #0099ff;
+        }
+
+        .maincon button {
+            background-color: #0099ff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            margin: 10px 0px;
+        }
+
+        .maincon p i {
+            font-size: 23px;
+        }
+
+        .mainpro h3,
+        .mainpro2 h3,
+        .mainpro3 h3,
+        .mainpro4 h3 {
+
+            margin: 50px;
+            text-align: center;
+            color: #0099ff;
+            text-decoration: underline;
+            margin-top: 50px;
+
+        }
+
+
+
+        .mini {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .mini img {
+
+            margin-top: 60px;
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+          
+            
+
+        }
+
+        .mini h2 {
+            margin: 0 0 20px 0;
+        }
+
+        .mini2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .typ {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            box-shadow: 0 0 5px black;
+            border-bottom: 2px solid #0099ff;
+            padding: 5px;
+        }
+
+        .mini2 img {
+            margin: 110px 100px 0 0;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px black;
+        }
+
+        .itm {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+ 
+
+        .itm img {
+            width: 500px;
+            height: 300px;
+            margin: 10px;
+
+        }
+
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .form input {
+            width: 400px;
+            height: 20px;
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid black;
+
+        }
+
+        .form textarea {
+            height: 280px;
+            width: 410px;
+            border-radius: 6px;
+            border: 1px solid black;
+
+
+        }
+
+        .form button,view{
+            padding: 8px 12px;
+            border: none;
+            border-radius: 6px;
+            background-color: #0099ff;
+            
+
+        }
+
+        .foot {
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20PX;
+            background-color: rgb(48, 46, 46);
+            height: 150px;
+
+        }
+
+        .foot i {
+            margin: 0 10px 0 10px;
+            font-size: 25px;
+        }
+                #element{
+                font-size:50px;
+                font-weight:900;
+              text-transform:uppercase;
+                
+                }
+                
+                
+                .view{
+                padding: 8px 12px;
+                border: none;
+                border-radius: 6px;
+                background-color: #0099ff;
+                text-align:center;
+                }
+          
+        
+        @media only screen and (max-width: 600px) {
+        
+        nav{
+        display:flex;
+        flex-direction: column;    
+   
+        }
+       
+        .maincon{
+        display:flex;
+        flex-direction: column;       
+        }
+        .pul{
+        height:80px;
+       text-align:center;
+       font-size:30px;
+        }
+    .maincon p i {
+        font-size: 33px;
+        margin:5px;
+    }
+       
+       .mini{
+       display:flex;
+       flex-direction: column;
+       margin:50px;
+       }
+       .mini img{
+       margin:0 0 10px 0;    
+        }
+        .mini2{
+        display:flex;
+      flex-direction: column-reverse;
+  margin:50px;
+        
+        }
+        .mini2 img{
+        margin:0 auto 50px auto;
+        }
+        
+        .itm{
+        display:flex;
+        flex-direction: column;
+        }
+        
+        .hide{
+        
+        visibility: hidden;
+        }
+        .pop{
+        margin:10px 50px 10px 50px;
+        }
+        .mini h2{
+        text-align:center;
+        }
+        .itm img {
+            width: 400px;
+            height: 300px;
+            margin: 10px;
+        
+        }
+
+        
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="pop" >
+                <h1>pariaml</h1>
+            </div>
+            <div class="hide" >
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SKLIIS</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="maincon">
+
+            
+            <div class="pul" >
+                <h2>hi,</h2>
+                <h2>i'am <span>parimal</span> </h2>
+                <h2>web developor</h2>
+                <span id="element"> </span>
+                <br>
+                <button>CONTACT</button>
+                <p>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </p>
+            </div>
+            <div class="" >
+                <img src="webimg.png"
+                    alt="">
+
+            </div>
+
+        </div>
+    </header>
+    <!--con2-->
+    <div class="mainpro">
+        <h3>ABOUT</h3>
+        <div class="mini">
+            <div class="imgs">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5T8IPwfQjxJdc8vjiyv9NlTCvsXn0QV8yhXWgxiVml-l3l33DdM5-q072r0RER8Asviw76C5_DLL1Ckx7YrELSwWuMC0Uu0Ekuh65vnV64tiMb1RzCVzF_nVf6DKnVfBHc3eGQFCIK1DUF7ZNUavarfcYqrirJ4-mc0Xc4sKmmr6IV2wJ98ENwaBRKzwN/s320/1000082922.jpg"
+                    alt="">
+
+            </div>
+            <div>
+                <h2>i'am parimal</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p> Voluptate cum expedita quo culpa tempora, assumenda, quis </p>
+                <p> fugiat ut voluptates soluta, aut earum nemo recusandae </p>
+                <p> cumque perferendis! Recusandae alias accusamus atque.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="mainpro2">
+        <h3>
+            skliis
+        </h3>
+        <div class="mini2">
+
+
+
+            <div>
+                <h2>Profesional Skills</h2>
+                <p>If the customer is very smart, he or she will be able to achieve the desired result. If </p>
+                <p> the option is really important, otherwise the error will be followed by </p>
+                <p>the architect.</p>
+                <div class="typ">
+                    <p>
+                        <i class="fa-brands fa-html5"></i>
+                        html5
+                    </p>
+                    <p>95%</p>
+                </div>
+
+
+                <div class="typ">
+                    <p>
+                        <i class="fa-brands fa-html5"></i>
+                        css3
+                    </p>
+                    <p>85%</p>
+                </div>
+
+
+
+                <div class="typ">
+                    <p>
+                        <i class="fa-brands fa-js"></i>
+                        javascript
+                    </p>
+                    <p>65%</p>
+                </div>
+                <div class="typ">
+                    <p>
+                        <i class="fa-solid fa-paintbrush"></i>
+                        ui/ux
+                    </p>
+                    <p>80%</p>
+                </div>
+            </div>
+            <div>
+                <img src="WhatsApp Image 2024-12-24 at 10.01.11 AM.jpeg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="mainpro3">
+        <h3>work</h3>
+        <div class="itm">
+            <div> 
+            <a href="#" ><img src="Computer-Software.jpg" alt=""> </a>
+            </div>
+            <div> 
+            <a href="#" ><img src="images.jpg" alt=""></a>
+            </div>
+            <div> 
+          <a href="#" >  <img src="images (1).jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="itm">
+            <div>
+             <a href="#" ><img src="images (2).jpg" alt=""></a>
+             </div>
+            <div> 
+            <a href="#" ><img src="computer-image-660.jpg" alt=""></a>
+            </div>
+            <div> 
+           <a href="#" > <img src="Computer-Software.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="mainpro4">
+        <h3>CONTACT</h3>
+        <div class="form">
+            <input type="text" placeholder=" NAME">
+            <input type="text" placeholder="EMAIL">
+            <textarea name="" id=""></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+    <div class="foot">
+        <h1>parimal</h1>
+        <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i
+                class="fa-brands fa-twitter"></i></p>
+        <p>bedimcode.ALL right reserved</p>
+    </div>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+    <!-- Setup and start animation! -->
+    <script>
+    var typed = new Typed('#element', {
+    strings: ['web designing', 'web designer','web developer'],
+    typeSpeed: 50,
+    });
+    </script>
+    
+</body>
+
+</html>
